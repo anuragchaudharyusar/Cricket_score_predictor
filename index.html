@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cricket Score Predictor</h1>
+        <form id="prediction-form">
+            <label for="team1">Team 1:</label>
+            <input type="text" id="team1" placeholder="e.g., TeamA">
+            
+            <label for="team2">Team 2:</label>
+            <input type="text" id="team2" placeholder="e.g., TeamB">
+            
+            <label for="venue">Venue:</label>
+            <input type="text" id="venue" placeholder="e.g., Stadium1">
+            
+            <label for="overs">Overs:</label>
+            <input type="number" id="overs" placeholder="e.g., 15">
+            
+            <label for="runs">Runs:</label>
+            <input type="number" id="runs" placeholder="e.g., 120">
+            
+            <label for="wickets">Wickets:</label>
+            <input type="number" id="wickets" placeholder="e.g., 3">
+            
+            <button type="submit">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
