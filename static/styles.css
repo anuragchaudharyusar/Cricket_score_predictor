@@ -1,0 +1,60 @@
+/* Apply to the entire body of the page */
+body {
+    background-image: url('/static/images/C_S_P_image.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: 'Open Sans', sans-serif; /* Apply font family from Google Fonts */
+    color: #333; /* Adjust text color if needed */
+}
+
+/* Additional styles for specific sections if needed */
+.container, .prediction-area, .results, .footer {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.container-heading {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.myButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.myButton:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.footer .contact a {
+    margin: 0 10px;
+    color: #007bff;
+}
+
+.footer .contact a:hover {
+    color: #0056b3;
+}
