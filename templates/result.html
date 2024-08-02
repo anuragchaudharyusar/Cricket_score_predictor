@@ -1,47 +1,57 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>First Innings Score Predictor</title>
-        <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>First Innings Score Predictor</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Website Title -->
+    <div class="container text-center mt-5">
+        <h2 class='display-4'><span class='font-weight-light'>First Innings Score Predictor for </span><span class="font-weight-bold">Indian Premier League (IPL)</span></h2>
+        <div class='my-4'>
+            <p class='lead'>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+        </div>
+    </div>
 
-    <body>
+    <!-- Prediction Area -->
+    <div class="container mt-5">
+        <!-- IPL Banner - 1 -->
+        
+        <!-- Result -->
+        <div class="alert alert-info text-center">
+            <p class='mb-0'>The final predicted score (range): <strong>{{ lower_limit }}</strong> to <strong>{{ upper_limit }}</strong></p>
+        </div>
 
-        <!-- Website Title -->
-    	<div class="container">
-            <h2 class='container-heading'><span class='heading_first'>First Innings Score Predictor for </span><span class="heading_second">Indian Premier League (IPL)</span></h2>
-            <div class='description'>
-    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
-    		</div>
-    	</div>
+        <!-- IPL Banner - 2 -->
+    </div>
 
-        <!-- Prediction Area -->
-        <div class="prediction-area">
-
-            <!-- IPL Banner - 1 -->
-
-
-			<!-- Result -->
-			<div class="results">
-				<p class='result-p'>The final predicted score (range): {{ lower_limit }} to {{ upper_limit }}</p>
-			</div>
-
-            <!-- IPL Banner - 2 -->
-           
-
-        <!-- Footer -->
-       <div class='footer'>
-           <div class="contact">
-               <a target="_blank" href="https://github.com/anujvyas/IPL-First-Innings-Score-Prediction-Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="https://www.linkedin.com/in/anujkvyas"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
-           </div>
-           <p class='footer-description'>Made with ❤️ by Anuj Vyas.</p>
-       </div>
-
-    </body>
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 mt-5">
+        <div class="container">
+            <div class="contact mb-2">
+                <a target="_blank" href="https://github.com/anuragchaudharyusar/Cricket_score_predictor" class="text-dark mr-3"><i class="fab fa-github fa-lg"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/anuragchaudharyusar" class="text-dark"><i class="fab fa-linkedin fa-lg"></i></a>
+            </div>
+            <p class='mb-0'>© 2024 Company, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
